@@ -1,24 +1,24 @@
 <template>
   <div class="statsGrid">
-    <div class="statCard">
+    <div class="statCard leftTop">
       <div class="label">Мы</div>
       <div class="value">{{ stats.position }}</div>
       <div class="subLabel">на рынке</div>
     </div>
 
-    <div class="statCard">
+    <div class="statCard rightTop">
       <div class="label">Гарантируем</div>
       <div class="value">{{ stats.percent }}<span class="unit">%</span></div>
       <div class="subLabel">безопасность</div>
     </div>
 
-    <div class="statCard">
+    <div class="statCard leftBottom">
       <div class="label">Календарик за</div>
       <div class="value">{{ stats.year }}<span class="unit">г.</span></div>
       <div class="subLabel">в подарок</div>
     </div>
 
-    <div class="statCard">
+    <div class="statCard rightBottom">
       <div class="label">Путешествие</div>
       <div class="value">{{ stats.days }}</div>
       <div class="subLabel">дней</div>
@@ -55,11 +55,52 @@ onMounted(async () => {
 })
 </script>
 <style>
+
+.leftTop {
+    border-bottom: 2px solid #92929200;
+  border-right: 2px solid #92929200;
+  background: linear-gradient(to bottom right, #92929200, #92929207);
+}
+.leftBottom {
+    border-top: 2px solid #92929200;
+  border-right: 2px solid #92929200;
+  background: linear-gradient(to top right, #92929200, #92929207);
+}
+.rightTop {
+  border-left: 2px solid #92929200;
+  border-bottom: 2px solid #92929200;
+  background: linear-gradient(to bottom left, #92929200, #92929207);
+}
+.rightBottom {
+    border-left: 2px solid #92929200;
+  border-top: 2px solid #92929200;
+  background: linear-gradient(to top left, #92929200, #92929207);
+}
+
+.leftTop:hover {
+  border-bottom: 2px solid #99999920;
+  border-right: 2px solid #99999920;
+  background: linear-gradient(to bottom right, #92929200, #92929215);
+}
+.leftBottom:hover {
+  border-top: 2px solid #99999920;
+  border-right: 2px solid #99999920;
+  background: linear-gradient(to top right, #92929200, #92929215);
+}
+.rightTop:hover {
+  border-left: 2px solid #99999920;
+  border-bottom: 2px solid #99999920;
+  background: linear-gradient(to bottom left, #92929200, #92929215);
+}
+.rightBottom:hover {
+  border-left: 2px solid #99999920;
+  border-top: 2px solid #99999920;
+  background: linear-gradient(to top left, #92929200, #92929215);
+}
 .statsGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 40px;
+  gap: 10px;
   border-radius:50%;
 }
 
@@ -68,13 +109,8 @@ onMounted(async () => {
   text-align: center;
   transition: all 0.3s ease;
   cursor: pointer;
-  backdrop-filter: blur(1px);
-  background-color: #00000015;
 }
 
-.statCard:hover {
-  backdrop-filter: blur(5px);
-}
 
 .label {
   font-size: 18px;
@@ -99,5 +135,25 @@ onMounted(async () => {
   font-size: 18px;
   color: #929292;
   margin-top: 10px;
+}
+@media (max-width: 768px) {
+  .statsGrid {
+    gap: 5px;
+  }
+  .statCard {
+    padding: 10px;
+  }
+  .label {
+    font-size: 12px;
+  }
+  .value {
+    font-size: 42px;
+  }
+  .unit {
+    font-size: 18px;
+  }
+  .subLabel {
+    font-size: 14px;
+  }
 }
 </style>
