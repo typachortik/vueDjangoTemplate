@@ -1,0 +1,79 @@
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url('./museo_sans_cyrl_100.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url('./museo_sans_cyrl_100_ital.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url('./museo_sans_cyrl_300.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url('./museo_sans_cyrl_300_ital.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url('./museo_sans_cyrl_500.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url('./museo_sans_cyrl_500_ital.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url('./museo_sans_cyrl_700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url('./museo_sans_cyrl_700_ital.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url('./museo_sans_cyrl_900.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Museo Sans Cyrl';
+  src: url('./museo_sans_cyrl_900_ital.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
